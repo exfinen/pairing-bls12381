@@ -56,7 +56,7 @@ Just True@
 -}
 
 module Pairing_bls12381 (g1Point, g2Point, g1Generator, g2Generator, pointMul, pointAdd,
-                         pairing, fieldPrime, groupOrder, smokeTest, Num( (*) ) ) where
+                         pairing, fieldPrime, groupOrder, smokeTest, Num( (*) ), Fq1(..) ) where
 
 
 import Data.Bits (shiftR)
