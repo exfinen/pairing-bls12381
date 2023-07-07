@@ -206,7 +206,8 @@ instance Field Fq12 where
 
   mul_nonres _ = error "not needed for Fq12"
 
-  inv (Fq12 a1 a0) = Fq12 (-a1 * factor) (a0 * factor)
+  inv (Fq12 a1 a0) =
+    Fq12 (-a1 * factor) (a0 * factor)
     where
       factor = inv (a0 * a0 - mul_nonres (a1 * a1))
 
